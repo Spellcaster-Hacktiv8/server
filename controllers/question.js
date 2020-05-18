@@ -68,11 +68,11 @@ class Controller {
 
         let sum = 0;
         for (let key in data) {
-                sum += parseFloat(data[key])
+                sum += data[key]
                 console.log(data[key])
         }
         
-        let result = (100/7) * sum;
+        let result = parseInt((100/7) * sum);
         let message = ''
 
         if (result >= 90){
