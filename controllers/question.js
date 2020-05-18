@@ -55,15 +55,15 @@ class Controller {
     }
 
     static result(req, res){
-        const {q2, q3, q4, q5, q6, q7, q8} = req.body
+        const {q0, q1, q2, q3, q4, q5, q6} = req.body
         const data = {
+            q0,
+            q1,
             q2,
             q3,
             q4,
             q5,
-            q6,
-            q7,
-            q8
+            q6
         }
 
         let sum = 0;
