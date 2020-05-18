@@ -55,7 +55,39 @@ class Controller {
     }
 
     static result(req, res){
+        const {q0, q1, q2, q3, q4, q5, q6, q7, q8} = req.body
+        const data = {
+            q2,
+            q3,
+            q4,
+            q5,
+            q6,
+            q7,
+            q8
+        }
 
+        let sum = 0;
+        for (let key in data) {
+                sum += parseFloat(data[key])
+                console.log(data[key])
+        }
+        
+        let result = (100/7) * sum;
+        let message = ''
+
+        if (result >= 90){
+            message = "You Should Practice Physical Distancing"
+        } else if (result < 90 && result > 50) {
+            message = "You Should Self-Quarantine"
+        } else {
+            message = "Contact Your Facility's Care Team"
+        }
+        
+        return res.status(200).json({
+            percentage : result + '%',
+            message
+        })
+    
     }
 }
 
