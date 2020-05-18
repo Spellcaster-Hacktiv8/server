@@ -4,16 +4,16 @@ class Controller {
 
      return res.status(200).json(
         [
-            {
-                question: 'Is this an emergency ?',
-                description: ['Severe, constant chest pain or pressure', 'Extreme difficulty breathing','Severe, constant lightheadedness','Serious disorientation or unresponsiveness'],
-                answer: ['Im expreciencing at least one of these', 'I do not any of these']
-            },
-            {
-                question: 'How old are you',
-                description: 'select to apply',
-                answer: ['Under 18', '18 or older']
-            },
+            // {
+            //     question: 'Is this an emergency ?',
+            //     description: ['Severe, constant chest pain or pressure', 'Extreme difficulty breathing','Severe, constant lightheadedness','Serious disorientation or unresponsiveness'],
+            //     answer: ['Im expreciencing at least one of these', 'I do not any of these']
+            // },
+            // {
+            //     question: 'How old are you',
+            //     description: 'select to apply',
+            //     answer: ['Under 18', '18 or older']
+            // },
             {
                 question: 'Have you recently started experiencing any of these symptoms ?',
                 description: ['Fever or chills','Mild or moderate difficulty breathing', 'New or worsening cough', 'Sustained loss of smell, taste, or appetite', 'sore throat','etc'],
